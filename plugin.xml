@@ -24,10 +24,10 @@
     <platform name="android">
         <config-file target="config.xml" parent="/*">
             <feature name="Browser">
-                <param name="android-package" value="com.maycur.plugin.Browser"/>
+                <param name="android-package" value="com.maycur.plugin.InAppBrowser"/>
             </feature>
         </config-file>
 
-        <source-file src="src/android/Browser.java" target-dir="src/com/maycur/plugin" />
+        <source-file src="src/android/InAppBrowser.java" target-dir="src/com/maycur/plugin" />
     </platform>
 </plugin>
