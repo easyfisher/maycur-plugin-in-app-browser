@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://maycur.com/mobile/plugins/1.0"
+        id="maycur-plugin-in-app-browser" version="1.0.0">
+    <name>In App Browser</name>
+    <description>Maycur In App Browser Plugin</description>
+    <license>Maycur</license>
+    <keywords>maycur,browser</keywords>
+
+    <js-module src="www/Browser.js" name="Browser">
+            <clobbers target="maycur.browser" />
+    </js-module>
+
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="Browser">
+                <param name="ios-package" value="MCBrowser"/>
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/MCBrowser.h" />
+        <source-file src="src/ios/MCBrowser.m" />
+    </platform>
+
+    <platform name="android">
+        <config-file target="config.xml" parent="/*">
+            <feature name="Browser">
+                <param name="android-package" value="com.maycur.plugin.Browser"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/Browser.java" target-dir="src/com/maycur/plugin" />
+    </platform>
+</plugin>
