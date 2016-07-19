@@ -36,6 +36,13 @@
             </feature>
         </config-file>
 
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <activity android:name="com.maycur.plugin.InAppBrowserActivity" android:theme="@android:style/Theme.DeviceDefault.Light.DarkActionBar" />
+        </config-file>
+        <framework src="com.android.support:appcompat-v7:21+" />
+
         <source-file src="src/android/InAppBrowser.java" target-dir="src/com/maycur/plugin" />
+        <source-file src="src/android/InAppBrowserActivity.java" target-dir="src/com/maycur/plugin" />
+        <source-file src="src/android/activity_in_app_browser.xml" target-dir="res/layout" />
     </platform>
 </plugin>
