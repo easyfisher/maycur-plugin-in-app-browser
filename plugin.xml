@@ -19,6 +19,14 @@
 
         <header-file src="src/ios/MCBrowser.h" />
         <source-file src="src/ios/MCBrowser.m" />
+        <header-file src="src/ios/MCBrowserController.h" />
+        <source-file src="src/ios/MCBrowserController.m" />
+        <header-file src="src/ios/MCBrowserView.h" />
+        <source-file src="src/ios/MCBrowserView.m" />
+        <header-file src="src/ios/MCBrowserNavController.h" />
+        <source-file src="src/ios/MCBrowserNavController.m" />
+
+        <framework src="WebKit.framework" weak="true" />
     </platform>
 
     <platform name="android">
